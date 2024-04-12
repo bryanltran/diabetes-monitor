@@ -87,7 +87,7 @@ function submitReading() {
             console.log(`Reason for low reading: ${reasonInput}\nPlease eat a sugar source, take your medicine, and follow your doctor's advice on meals and snacks.`);
         }
     } else if (bgReading >= ranges.normal.min && bgReading <= ranges.normal.max) {
-        // Use console.log for debugging
+        alert("Your blood sugar is within a normal range.");
         console.log("Your blood sugar is within a normal range.");
     } else if (bgReading > ranges.high) {
         // Blood sugar is high, notify the user to call their doctor
